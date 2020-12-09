@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/correlation_result"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Correlation value"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correlation_result"
+        android:layout_marginTop="-98dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="correlation percentage"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/correlation_low"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="low correlation"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/correlation_high"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/correlation_low"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="high correlation"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/threshold"
+        android:layout_width="174dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/correlation_high"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="thresholdUpdated"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/threshold"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="BtnClick"
+        android:text="Feedback start"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+<!--    <Button-->
+<!--        android:id="@+id/playBtn"-->
+<!--        android:layout_width="46dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:background="@drawable/play"-->
+<!--        android:onClick="play"-->
+
+<!--        />-->
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/button_start"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="export"
+        android:text="Export data"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="#3C3F41"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:src="@drawable/sound" />-->
+
+<!--        <SeekBar-->
+<!--            android:id="@+id/VolumeBar"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:max="100"-->
+<!--            android:outlineSpotShadowColor="@color/colorAccent"-->
+<!--            android:progress="50" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="26dp"-->
+<!--            android:layout_height="26dp"-->
+<!--            android:src="@drawable/sound2" />-->
+<!--    </LinearLayout>-->
+
+
+</RelativeLayout>
